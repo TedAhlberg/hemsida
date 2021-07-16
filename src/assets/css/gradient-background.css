@@ -1,0 +1,49 @@
+.gradient-background {
+    /*
+    background: var(--bg-gradient-color1)
+    background: -webkit-linear-gradient();
+    background: -moz-linear-gradient();
+    background: -ms-linear-gradient();
+    background: -o-linear-gradient(); 
+    */
+    background: var(--main-gradient);
+    background-size: 1000% 400%;
+    /*
+    -webkit-animation: bodyBg 5s linear infinite;
+    -moz-animation: bodyBg 5s linear infinite;
+    */
+    animation: bodyBackground 15s linear infinite;
+    /*height: 100vh;*/
+}
+
+@keyframes bodyBackground {
+    0% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 20% 100%
+    }
+}
+
+/*
+@-webkit-keyframes bodyBg {
+    0% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 15% 100%
+    }
+}
+
+@-moz-keyframes bodyBg {
+    0% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 15% 100%
+    }
+}
+*/
