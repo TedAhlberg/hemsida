@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <Header/>
-    <Arrow/>
+    <Header />
+    <Content />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Arrow from './components/Arrow.vue'
+  import Header from './components/Header.vue'
+  import Content from './components/Content.vue'
 
-export default {
-  name: 'App',
-  components: {
-    Header,
-    Arrow
+  export default {
+    name: 'App',
+    components: {
+      Header,
+      Content
+    }
   }
-}
 </script>
 
 <style>

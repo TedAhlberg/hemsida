@@ -13,8 +13,8 @@
     -moz-animation: bodyBg 5s linear infinite;
     */
     animation: bodyBackground 15s linear infinite;
-    
-    
+
+
 }
 
 @keyframes bodyBackground {
