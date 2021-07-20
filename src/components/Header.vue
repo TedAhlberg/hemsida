@@ -27,7 +27,6 @@
 
 <style lang="css" scoped>
     #header-wrapper {
-        position: fixed;
         padding: 0;
         margin: 0;
         top: 0;
@@ -45,7 +44,7 @@
         border-radius: 50%;
         box-shadow: var(--main-box-shadow);
 
-        margin-top: 10%;
+        margin-top: 7%;
         margin-left: auto;
         margin-right: auto;
 
@@ -88,7 +87,7 @@
         letter-spacing: -5.5px;
         margin-top: -58px;
 
-        font-family: 'DM Serif Display', serif;
+        font-family: var(--font1);
         color: var(--main-title-color);
         user-select: none;
 
@@ -102,7 +101,7 @@
         letter-spacing: 11.7px;
         margin-top: -51px;
 
-        font-family: 'Montserrat', sans-serif;
+        font-family: var(--font2);
         color: var(--main-title-color);
         user-select: none;
 

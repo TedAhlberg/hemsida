@@ -6,11 +6,11 @@
     background: -ms-linear-gradient();
     background: -o-linear-gradient(); 
     */
-    background: var(--main-gradient);
+    background: var(--main-bg-gradient);
     background-size: 1000% 400%;
     /*
-    -webkit-animation: bodyBg 5s linear infinite;
-    -moz-animation: bodyBg 5s linear infinite;
+    -webkit-animation: bodyBackground 15s linear infinite;
+    -moz-animation: bodyBackground 15s linear infinite;
     */
     animation: bodyBackground 15s linear infinite;
 
@@ -48,3 +48,9 @@
     }
 }
 */
+
+.fade-background {
+    background: var(--main-f-gradient);
+    height: 100%;
+    width: 100%;
+}

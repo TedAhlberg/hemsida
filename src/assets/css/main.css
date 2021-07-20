@@ -1,23 +1,32 @@
 :root {
+    --font1: 'DM Serif Display', serif;
+    --font2: 'Montserrat', sans-serif;
+
     --main-bg-color: rgb(247, 241, 232);
     --main-title-color: rgb(24, 21, 17);
-    
+
     --main-shadow-color: rgb(206, 194, 182);
     --main-box-shadow: 0px 0px 20px var(--main-shadow-color);
-    
-    --main-arrow-color: #c4c0ba;
-    
 
-    --bg-gradient-degree: 60deg;
+    --main-inset-shadow-color: rgb(163, 153, 144);
+    --main-inset-box-shadow: inset 0px 0px 20px var(--main-inset-shadow-color);
+
+    --main-arrow-color: #c4c0ba;
+
     --bg-gradient-color1: #a3e3ac;
     --bg-gradient-color2: #e0a84c;
     --bg-gradient-color3: #91d4db;
-    --main-gradient: linear-gradient(var(--bg-gradient-degree),
-    var(--bg-gradient-color1) 0%,
+    --main-bg-gradient: linear-gradient(60deg,
+            var(--bg-gradient-color1) 0%,
             var(--bg-gradient-color2) 25%,
             var(--bg-gradient-color3) 50%,
             var(--bg-gradient-color1) 75%,
-            var(--bg-gradient-color2) 100%)
+            var(--bg-gradient-color2) 100%);
+
+    --f-gradient-color: rgb(247, 241, 232, 0);
+    --main-f-gradient: linear-gradient(180deg,
+        var(--f-gradient-color) 0%,
+        var(--main-bg-color) 70%);
 }
 
 body {
