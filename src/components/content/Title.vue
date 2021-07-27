@@ -1,10 +1,6 @@
 <template>
-    <div id="title" class="gradient-background">
-        <div class="fade-background">
-            <div id="title-text">
-                <span id="main-title">PROJECTS</span>
-            </div>
-        </div>
+    <div class="title">
+        PROJECTS
     </div>
 </template>
 
@@ -15,31 +11,18 @@
 </script>
 
 <style>
-    #title {
-        width: 50%;
-        height: 125px;
-
-        margin-left: auto;
-        margin-right: auto;
-
-        border-radius: 30px;
-        box-shadow: var(--main-inset-box-shadow);
-    }
-
-    #title-text {
-        margin-left: auto;
-        margin-right: auto;
-
-        padding-top: 30px;
-        letter-spacing: 11.7px;
+    .title {
+        margin: 30px auto;
+        width: fit-content;
+        padding: 1vw;
+        position: relative;
 
         font-family: var(--font2);
-        font-size: 2.53em;
-        text-align: center;
-        
+        font-size: 3em;
         color: var(--main-title-color);
         opacity: 75%;
-
-        border-radius: 30px;
+        letter-spacing: 10px;
+        text-align: center;
+        /* background-color: var(--main-bg-color); */
     }
 </style>

@@ -8,20 +8,20 @@
     --main-shadow-color: rgb(206, 194, 182);
     --main-box-shadow: 0px 0px 20px var(--main-shadow-color);
 
-    --main-inset-shadow-color: rgb(163, 153, 144);
-    --main-inset-box-shadow: inset 0px 0px 20px var(--main-inset-shadow-color);
-
     --main-arrow-color: #c4c0ba;
 
-    --bg-gradient-color1: #a3e3ac;
-    --bg-gradient-color2: #e0a84c;
-    --bg-gradient-color3: #91d4db;
+    --main-inset-shadow-color: rgba(0, 0, 0, 0.35);
+
+    --bg-color1: #a3e3ac;
+    --bg-color2: #e0a84c;
+    --bg-color3: #91d4db;
+
     --main-bg-gradient: linear-gradient(60deg,
-            var(--bg-gradient-color1) 0%,
-            var(--bg-gradient-color2) 25%,
-            var(--bg-gradient-color3) 50%,
-            var(--bg-gradient-color1) 75%,
-            var(--bg-gradient-color2) 100%);
+            var(--bg-color1) 0%,
+            var(--bg-color2) 25%,
+            var(--bg-color3) 50%,
+            var(--bg-color1) 75%,
+            var(--bg-color2) 100%);
 
     --f-gradient-color: rgb(247, 241, 232, 0);
     --main-f-gradient: linear-gradient(180deg,
@@ -31,4 +31,6 @@
 
 body {
     background-color: var(--main-bg-color);
+    margin: 0px;
+    padding: 0px;
 }
