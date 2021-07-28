@@ -48,6 +48,7 @@
         margin-top: 7%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 55px;
 
         width: 75vw;
         max-width: 550px;

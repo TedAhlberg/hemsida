@@ -1,6 +1,6 @@
 <template>
-    <div id="content">
-        <Title />
+    <div id="content" :class="compColor">
+        <Title :contentTitle="contentTitle" />
     </div>
 </template>
 
@@ -11,18 +11,24 @@
         name: 'Content',
         components: {
             Title
+        },
+        props: ['contentTitle', 'color'],
+        computed: {
+            compColor() {
+               return {['bg-color' + this.color]: true}
+            }
         }
     }
 </script>
 
 <style lang="css" scoped>
     #content {
-        background-color: var(--bg-color1);
         height: 20vh;
         width: 100%;
+        margin-bottom: -40px;
 
-        overflow: auto;
+        overflow: hidden;
 
-        box-shadow: 0px 0px 40px var(--main-inset-shadow-color) inset;
+        box-shadow: 0px 0px 35px var(--main-inset-shadow-color) inset;
     }
 </style>

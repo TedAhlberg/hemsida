@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <Content />
+    <Content contentTitle="PROJECTS" color='1' />
+    <Content contentTitle="RESUME" color='2' />
+    <Content contentTitle="CONTACT" color='3' />
   </div>
 </template>
 

@@ -23,7 +23,8 @@ button {
     -webkit-font-smoothing: antialiased;
     
     font-size: 73px;
-    margin: 74px auto;
+    margin: auto;
+    margin-bottom: 60px;
 }
 
 .down {
@@ -37,7 +38,6 @@ button {
         margin-top: ; 
         text-shadow: ;*/
         font-size: 10vw;
-        margin-top: 10vw;
     }
 }
 

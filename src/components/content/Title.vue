@@ -1,28 +1,35 @@
 <template>
     <div class="title">
-        PROJECTS
+        {{contentTitle}}
     </div>
 </template>
 
 <script>
     export default {
-        name: 'Title'
+        name: 'Title',
+        props: ['contentTitle'],
     }
 </script>
 
 <style>
     .title {
-        margin: 30px auto;
+        margin: 40px auto;
         width: fit-content;
-        padding: 1vw;
         position: relative;
 
         font-family: var(--font2);
-        font-size: 3em;
         color: var(--main-title-color);
-        opacity: 75%;
-        letter-spacing: 10px;
+        opacity: 65%;
         text-align: center;
-        /* background-color: var(--main-bg-color); */
+
+        font-size: 2.7em;
+        letter-spacing: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .title {
+            font-size: 7.25vw;
+            letter-spacing: 1.75vw;
+        }
     }
 </style>

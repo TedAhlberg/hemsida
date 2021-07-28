@@ -10,7 +10,7 @@
 
     --main-arrow-color: #c4c0ba;
 
-    --main-inset-shadow-color: rgba(0, 0, 0, 0.35);
+    --main-inset-shadow-color: rgba(0, 0, 0, 0.25);
 
     --bg-color1: #a3e3ac;
     --bg-color2: #e0a84c;
@@ -34,3 +34,16 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
+.bg-color1 {
+    background-color: var(--bg-color1);
+}
+
+.bg-color2 {
+    background-color: var(--bg-color2);
+}
+
+.bg-color3 {
+    background-color: var(--bg-color3);
+}
+
