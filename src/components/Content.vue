@@ -1,5 +1,5 @@
 <template>
-    <div id="content" :class="compColor">
+    <div class="content" :class="compColor">
         <Title :contentTitle="contentTitle" />
         <Projects v-if="projects" />
         <Resume v-if="resume" />
@@ -9,7 +9,7 @@
 
 <script>
     import Title from './content/Title.vue'
-    import Projects from './content/Projects.vue'
+    import Projects from './content/projects/Projects.vue'
     import Resume from './content/Resume.vue'
     import Contact from './content/Contact.vue'
 
@@ -45,13 +45,17 @@
 </script>
 
 <style lang="css" scoped>
-    #content {
+    .content {
         height: 50vh;
         width: 100%;
-        margin-bottom: -40px;
-
+        margin-bottom: -35px;
         overflow: hidden;
-
         box-shadow: 0px 0px 35px var(--main-inset-shadow-color) inset;
+    }
+
+    @media screen and (max-width: 735px) {
+        .content {
+            box-shadow: 0px 0px 5vw var(--main-inset-shadow-color) inset;
+        }
     }
 </style>

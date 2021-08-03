@@ -10,7 +10,7 @@ button {
     width: 35%;
 
     text-shadow: 0 0 20px var(--main-shadow-color);
-    color: var(--main-arrow-color);
+    color: var(--arrow-color);
     cursor: pointer;
 
     padding: 0px;
@@ -27,16 +27,17 @@ button {
     margin-bottom: 60px;
 }
 
+button:focus {
+    color: var(--arrow-focus-color);
+    outline: 0;
+}
+
 .down {
     transform: rotate(180deg);
 }
 
 @media screen and (max-width: 735px) {
     button {
-        /* height: ;
-        font-size: ;
-        margin-top: ; 
-        text-shadow: ;*/
         font-size: 10vw;
     }
 }

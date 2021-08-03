@@ -45,7 +45,7 @@
         border-radius: 50%;
         box-shadow: var(--main-box-shadow);
 
-        margin-top: 7%;
+        margin-top: 5.5%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 55px;
