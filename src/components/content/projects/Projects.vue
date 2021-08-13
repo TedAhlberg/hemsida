@@ -1,11 +1,17 @@
 <template>
-  <div></div>
+  <div>
+    <Card />
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+  import Card from './Card.vue'
+  export default {
+    name: 'Projects',
+    components: {
+      Card
+    }
+  }
 </script>
 
 <style>

@@ -12,7 +12,7 @@
     --arrow-focus-color: rgb(212, 208, 201);
 
 
-        --main-inset-shadow-color: rgba(0, 0, 0, 0.25);
+    --main-inset-shadow-color: rgba(0, 0, 0, 0.25);
 
     --bg-color1: #a3e3ac;
     --bg-color2: #e0a84c;
@@ -24,11 +24,6 @@
             var(--bg-color3) 50%,
             var(--bg-color1) 75%,
             var(--bg-color2) 100%);
-
-    --f-gradient-color: rgb(247, 241, 232, 0);
-    --main-f-gradient: linear-gradient(180deg,
-            var(--f-gradient-color) 0%,
-            var(--main-bg-color) 70%);
 }
 
 body {
