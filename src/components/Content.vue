@@ -1,9 +1,11 @@
 <template>
-    <div class="content" :class="compColor">
+    <div class="content-wrapper" :class="compColor">
         <Title :contentTitle="contentTitle" />
-        <Projects v-if="projects" />
-        <Resume v-if="resume" />
-        <Contact v-if="contact" />
+        <div class="content">
+            <Projects v-if="projects" />
+            <Resume v-if="resume" />
+            <Contact v-if="contact" />
+        </div>
     </div>
 </template>
 
@@ -45,17 +47,21 @@
 </script>
 
 <style lang="css" scoped>
-    .content {
-        height: 50vh;
+    .content-wrapper {
+        height: auto;
         width: 100%;
         margin-bottom: -35px;
         overflow: hidden;
-        box-shadow: 0px 0px 35px var(--main-inset-shadow-color) inset;
+        box-shadow: var(--main-inset-box-shadow);
+    }
+
+    .content {
+        padding-bottom: 5rem;
     }
 
     @media screen and (max-width: 735px) {
-        .content {
-            box-shadow: 0px 0px 5vw var(--main-inset-shadow-color) inset;
+        .content-wrapper {
+            box-shadow: var(--main-r-inset-box-shadow);
         }
     }
 </style>

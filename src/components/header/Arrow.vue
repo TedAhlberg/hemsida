@@ -25,6 +25,7 @@ button {
     font-size: 73px;
     margin: auto;
     margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 button:focus {

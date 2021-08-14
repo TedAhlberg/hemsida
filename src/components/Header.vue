@@ -43,7 +43,7 @@
 
     #header {
         border-radius: 50%;
-        box-shadow: var(--main-box-shadow);
+        box-shadow: var(--header-box-shadow);
 
         margin-top: 5.5%;
         margin-left: auto;

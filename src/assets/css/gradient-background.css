@@ -48,9 +48,3 @@
     }
 }
 */
-
-.fade-background {
-    background: var(--main-f-gradient);
-    height: 100%;
-    width: 100%;
-}

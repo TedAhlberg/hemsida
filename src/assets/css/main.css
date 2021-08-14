@@ -5,20 +5,24 @@
     --main-bg-color: rgb(247, 241, 232);
     --main-title-color: rgb(24, 21, 17);
 
-    --main-shadow-color: rgb(206, 194, 182);
-    --main-box-shadow: 0px 0px 20px var(--main-shadow-color);
+    --header-shadow-color: rgb(206, 194, 182);
+    --header-box-shadow: 0px 0px 20px var(--header-shadow-color);
+
+    --main-shadow-color: rgba(0, 0, 0, 0.25);
+    --main-box-shadow: 0px 0px 35px var(--main-shadow-color);
+    --main-inset-box-shadow: 0px 0px 35px var(--main-shadow-color) inset;
+    --main-r-box-shadow: 0px 0px 5vw var(--main-shadow-color);
+    --main-r-inset-box-shadow: 0px 0px 5vw var(--main-shadow-color) inset;
+    
 
     --arrow-color: rgb(196, 192, 186);
     --arrow-focus-color: rgb(212, 208, 201);
-
-
-    --main-inset-shadow-color: rgba(0, 0, 0, 0.25);
 
     --bg-color1: #a3e3ac;
     --bg-color2: #e0a84c;
     --bg-color3: #91d4db;
 
-    --main-bg-gradient: linear-gradient(60deg,
+    --main-bg-gradient: linear-gradient(240deg,
             var(--bg-color1) 0%,
             var(--bg-color2) 25%,
             var(--bg-color3) 50%,

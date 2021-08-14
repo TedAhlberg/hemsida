@@ -14,6 +14,7 @@
 <style>
     .title {
         margin: 40px auto;
+        padding-left: 10px;
         width: fit-content;
         position: relative;
 

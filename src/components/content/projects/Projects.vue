@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="projects">
     <Card />
   </div>
 </template>
@@ -15,5 +15,10 @@
 </script>
 
 <style>
-
+  #projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 </style>
