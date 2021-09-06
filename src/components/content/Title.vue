@@ -13,8 +13,8 @@
 
 <style>
     .title {
-        margin: 40px auto 15px auto;
-        padding-left: 10px;
+        margin: 1em auto 0.6em auto;
+        padding-left: 0.2em;
         width: fit-content;
         position: relative;
 
@@ -25,6 +25,7 @@
 
         font-size: 2.7em;
         letter-spacing: 10px;
+        user-select: none;
     }
 
     @media screen and (max-width: 600px) {

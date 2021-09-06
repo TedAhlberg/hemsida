@@ -2,8 +2,8 @@
     <div class="content-wrapper" :class="compColor">
         <Title :contentTitle="contentTitle" />
         <div class="content">
-            <Projects v-if="projects" />
             <Resume v-if="resume" />
+            <Projects v-if="projects" />
             <Contact v-if="contact" />
         </div>
     </div>
@@ -11,24 +11,24 @@
 
 <script>
     import Title from './content/Title.vue'
-    import Projects from './content/projects/Projects.vue'
     import Resume from './content/Resume.vue'
+    import Projects from './content/projects/Projects.vue'
     import Contact from './content/Contact.vue'
 
     export default {
         name: 'Content',
         components: {
             Title,
-            Projects,
             Resume,
+            Projects,
             Contact
         },
         props: ['contentTitle', 'color'],
         data: () => {
             return ({
-                projects: false,
                 resume: false,
-                contact: false,
+                projects: false,
+                contact: false,                
             })
         },
         computed: {
@@ -39,8 +39,8 @@
             }
         },
         created() {
-            if (this.contentTitle == "PROJECTS") this.projects = true
             if (this.contentTitle == "RESUME") this.resume = true
+            if (this.contentTitle == "PROJECTS") this.projects = true
             if (this.contentTitle == "CONTACT") this.contact = true
         }
     }
@@ -57,6 +57,8 @@
 
     .content {
         padding-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     @media screen and (max-width: 735px) {

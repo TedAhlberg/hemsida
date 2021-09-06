@@ -4,7 +4,7 @@
     </div>
     <div class="card-gradient">
       <div class="card-content">
-        <span class="card-title">PROJECT 
+        <span class="card-title">PROJECT
           <div class="card-title-line"></div>
         </span>
         <span class="card-text">
@@ -12,7 +12,7 @@
           turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus
           nec.
         </span>
-        <button class="card-button"><span>More Info</span></button>
+        <button class="card-button"><span>MORE INFO</span></button>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
     box-shadow: var(--main-box-shadow);
     overflow: hidden;
     border-radius: 2rem;
-    transition: 0.5s;
+    transition: 0.25s ease-in-out;
   }
 
   .card-wrapper:hover {
@@ -64,10 +64,14 @@
     margin-top: -5rem;
     padding-top: 5rem;
     filter: blur(0px);
-    background: linear-gradient(180deg,
+    /* background: linear-gradient(180deg,
         rgba(247, 241, 232, 0%) 5%,
         rgba(247, 241, 232, 75%) 35%,
-        rgba(247, 241, 232, 80%) 100%);
+        rgba(247, 241, 232, 80%) 100%); */
+    background: linear-gradient(180deg,
+        rgba(100%, 100%, 100%, 0%) 5%,
+        rgba(100%, 100%, 100%, 75%) 35%,
+        rgba(100%, 100%, 100%, 80%) 100%);
     border-radius: 1.5rem;
   }
 
@@ -93,9 +97,17 @@
 
   .card-title-line {
     height: 5px;
-    background-color: var(--main-color1);
+    background-color: var(--a-color2);
     margin-top: 0.25rem;
     margin-bottom: 0.75rem;
+    transform: scaleX(0);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+    border-radius: 2px;
+  }
+
+  .card-wrapper:hover .card-title-line {
+    transform: scaleX(1);
   }
 
   .card-text {
@@ -108,18 +120,20 @@
 
   .card-button {
     font-family: var(--font2);
-    font-size: 1.02rem;
     padding: 0.75rem;
     border: 0;
     color: rgba(247, 241, 232);
-    background-color: var(--main-color1);
+    background-color: var(--a-color2);
     box-shadow: var(--main-box-shadow);
     cursor: pointer;
-    transition: 0.35s;
+    transition: 0.2s;
+    border-radius: 3px;
   }
 
   .card-button>span {
-    opacity: 100%;
+    font-size: 0.9rem;
+    opacity: 90%;
+    letter-spacing: 0.1rem;
   }
 
   .card-button:hover {
@@ -127,13 +141,26 @@
     box-shadow: var(--main-h-box-shadow);
   }
 
-  .card-button:focus {
-    background-color: var(--main-f-color1);
-    outline: none;
+  .card-button:active {
+    transform: scale(1.025);
   }
 
-  .card-button:active {
-    transform: scale(1.025)
+  @media screen and (max-width: 600px) {
+    .card-title {
+      font-size: 1.5rem;
+    }
+
+    .card-text {
+      font-size: 0.975rem;
+    }
+
+    .card-button {
+      padding: 0.6rem 0.75rem 0.75rem 0.75rem;
+    }
+
+    .card-button>span {
+      font-size: 0.7rem;
+    }
   }
 
   @media screen and (max-width: 735px) {
