@@ -11,7 +11,7 @@
 
 <script>
     import Title from './content/Title.vue'
-    import Resume from './content/Resume.vue'
+    import Resume from './content/resume/Resume.vue'
     import Projects from './content/projects/Projects.vue'
     import Contact from './content/Contact.vue'
 

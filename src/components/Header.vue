@@ -90,7 +90,7 @@
         margin-top: -58px;
 
         font-family: var(--font1);
-        color: var(--main-title-color);
+        color: var(--text-color);
         user-select: none;
 
         padding-right: 2%;
@@ -104,7 +104,7 @@
         margin-top: -51px;
 
         font-family: var(--font2);
-        color: var(--main-title-color);
+        color: var(--text-color);
         user-select: none;
 
         padding-left: 5.25%;

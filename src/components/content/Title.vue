@@ -13,17 +13,17 @@
 
 <style>
     .title {
-        margin: 1em auto 0.6em auto;
+        margin: 3rem auto 3rem auto;
         padding-left: 0.2em;
         width: fit-content;
         position: relative;
 
         font-family: var(--font2);
-        color: var(--main-title-color);
+        color: var(--text-color);
         opacity: 65%;
         text-align: center;
 
-        font-size: 2.7em;
+        font-size: 2.7rem;
         letter-spacing: 10px;
         user-select: none;
     }

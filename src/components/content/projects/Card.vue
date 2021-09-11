@@ -64,10 +64,6 @@
     margin-top: -5rem;
     padding-top: 5rem;
     filter: blur(0px);
-    /* background: linear-gradient(180deg,
-        rgba(247, 241, 232, 0%) 5%,
-        rgba(247, 241, 232, 75%) 35%,
-        rgba(247, 241, 232, 80%) 100%); */
     background: linear-gradient(180deg,
         rgba(100%, 100%, 100%, 0%) 5%,
         rgba(100%, 100%, 100%, 75%) 35%,
@@ -96,7 +92,7 @@
   }
 
   .card-title-line {
-    height: 5px;
+    height: 4px;
     background-color: var(--a-color2);
     margin-top: 0.25rem;
     margin-bottom: 0.75rem;

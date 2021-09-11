@@ -1,9 +1,12 @@
 :root {
     --font1: 'DM Serif Display', serif;
     --font2: 'Montserrat', sans-serif;
+    --font3: 'Roboto', sans-serif;
 
     --main-bg-color: rgb(247, 241, 232);
-    --main-title-color: rgb(24, 21, 17);
+
+    --text-color: rgb(24, 21, 17);
+    --sub-text-color: rgb(54, 47, 38);
 
     --header-shadow-color: rgb(206, 194, 182);
     --header-box-shadow: 0px 0px 20px var(--header-shadow-color);
@@ -18,13 +21,9 @@
     --arrow-color: rgb(196, 192, 186);
     --arrow-focus-color: rgb(212, 208, 201);
 
-    --bg-color1: rgb(195, 242, 202);
-    --bg-color2: rgb(247, 206, 139);
-    --bg-color3: rgb(177, 226, 232);
-
-    --a-color1: ;
-    --a-color2: ;
-    --a-color3: ;
+    --bg-color1: rgb(177, 226, 232);
+    --bg-color2: rgb(195, 242, 202);
+    --bg-color3: rgb(247, 206, 139);
 
     --main-bg-gradient: linear-gradient(60deg,
             var(--bg-color1) 0%,
