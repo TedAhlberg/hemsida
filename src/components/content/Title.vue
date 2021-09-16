@@ -23,7 +23,7 @@
         opacity: 65%;
         text-align: center;
 
-        font-size: 2.7rem;
+        font-size: 3.75rem;
         letter-spacing: 10px;
         user-select: none;
     }
