@@ -11,22 +11,42 @@
         Phasellus malesuada libero sit amet nibh tempus sodales vitae at tortor</p>
     </div>
     <div class="flex-wrapper">
+
       <div id="section2">
         <div class="icon-wrapper">
           <IconContact class="icon" />
         </div>
-        <h2>Contact</h2>
-        <h3>Phone</h3>
-        <p>+46 70-978 77 81</p>
-        <h3>E-mail</h3>
-        <p>ted.ahlberg95@gmail.com</p>
-        <h3>Address</h3>
-        <p>Dalhemsvägen 69 <br>254 65 Helsingborg</p>
+        <div class="section-wrapper">
+          <h2>Contact</h2>
+          <h3>Phone</h3>
+          <p>+46 70-978 77 81</p>
+          <h3>E-mail</h3>
+          <p>Ted.ahlberg95@gmail.com</p>
+          <h3>Address</h3>
+          <p>Dalhemsvägen 69 <br>254 65 Helsingborg</p>
+        </div>
         <div class="icon-wrapper">
           <IconLanguages class="icon" />
         </div>
-        <h2>Languages</h2>
+        <div class="section-wrapper">
+          <h2 class="h-descender">Languages</h2>
+          <h3>Spoken</h3>
+          <p class="p-bar">Swedish</p>
+          <Bar class="bar" level="10" />
+          <p class="p-bar">English</p>
+          <Bar class="bar" level="9" />
+          <h3>Programming</h3>
+          <p class="p-bar">JavaScript</p>
+          <Bar class="bar" level="8" />
+          <p class="p-bar">HTML/CSS</p>
+          <Bar class="bar" level="8" />
+          <p class="p-bar">Java</p>
+          <Bar class="bar" level="6" />
+          <p class="p-bar">C++</p>
+          <Bar class="bar" level="4" />
+        </div>
       </div>
+
       <div id="section3">
         <div class="icon-wrapper">
           <IconEducation class="icon" />
@@ -49,13 +69,29 @@
         <div class="icon-wrapper">
           <IconWorkHistory class="icon" />
         </div>
-        <h2>Work History</h2>
+        <h2 class="h-descender">Work History</h2>
+        <ul>
+          <li>
+            <h3>ICA DE Helsingborg</h3> 2016 - Present
+            <span>
+              Warehouse worker - Full time permanent employment
+            </span>
+          </li>
+          <li>
+            <h3>Academic Search</h3> 2015 - 2016
+            <span>
+              Market research - Hourly seasonal employment
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import Bar from './Bar.vue'
+
   import IconContact from './../../icons/IconContact.vue'
   import IconLanguages from './../../icons/IconLanguages.vue'
   import IconEducation from './../../icons/IconEducation.vue'
@@ -64,6 +100,7 @@
   export default {
     name: 'Resume',
     components: {
+      Bar,
       IconContact,
       IconLanguages,
       IconEducation,
@@ -84,7 +121,7 @@
 
   h3 {
     letter-spacing: 0.5px;
-    margin: 0.75rem 0 0.25rem 0;
+    margin: 0.75rem 0 0 0;
   }
 
   ul {
@@ -92,7 +129,7 @@
   }
 
   li {
-    margin: 0.5rem 0 0.25rem -1rem;
+    margin: 0.5rem 0 0 -1rem;
     padding: 0;
   }
 
@@ -105,8 +142,16 @@
     opacity: 90%;
   }
 
+  .h-descender {
+    padding-top: 0.25rem;
+  }
+
   .flex-wrapper {
     display: flex;
+  }
+
+  .section-wrapper {
+    margin: 0 0 1rem 0;
   }
 
   .icon-wrapper {
@@ -120,6 +165,7 @@
     justify-content: space-around;
     flex-direction: column;
     float: left;
+    opacity: 90%;
   }
 
   .icon {
@@ -131,6 +177,13 @@
     position: relative;
   }
 
+  .bar {
+    width: 8rem;
+    float: right;
+    margin: -0.75rem 2rem 0 0;
+    opacity: 90%;
+  }
+
   #resume {
     position: relative;
     margin: 3rem auto 0 auto;
@@ -139,7 +192,8 @@
     border-radius: 2rem;
     width: auto;
     max-width: 960px;
-    height: 50rem;
+    height: auto;
+    padding-bottom: 2.5rem;
   }
 
   #resume-pic {
@@ -184,32 +238,33 @@
 
   #section2 {
     margin: 1.75rem 0 0 3rem;
-    width: 18rem;
-    /* background-color: red; */
+    width: 20rem;
     float: left;
-
     font-family: var(--font3);
   }
 
-  #section2>h3 {
+  #section2>.section-wrapper>h3 {
     color: var(--text-color);
     opacity: 60%;
   }
 
-  #section2>p {
-    margin: 0 0 0.5rem 0.25rem;
+  #section2>.section-wrapper>p {
+    margin: 0.25rem 0 0 0.25rem;
     opacity: 60%;
+  }
+
+  #section2>.section-wrapper>.p-bar {
+    margin: 0.5rem 0 0 0.25rem;
   }
 
   #section3 {
     margin: 1.75rem 2.5rem 0 0;
     width: auto;
     height: 20rem;
-    /* background-color: blue; */
   }
 
   #section3>ul {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
     color: var(--text-color);
     opacity: 60%;
   }
@@ -222,7 +277,7 @@
 
   #section3>ul>li>span {
     display: block;
-    margin: 0.25rem 0 0rem 0.25rem;
+    margin: 0.25rem 0 0 0.25rem;
     padding: 0 0 0.5rem 0;
   }
 
