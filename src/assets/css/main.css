@@ -25,6 +25,8 @@
     --bg-color2: rgb(195, 242, 202);
     --bg-color3: rgb(247, 206, 139);
 
+    --bar-color: rgb(224, 219, 213);
+
     --main-bg-gradient: linear-gradient(60deg,
             var(--bg-color1) 0%,
             var(--bg-color2) 25%,

@@ -27,7 +27,7 @@
 <style>
     .bar-wrapper {
         height: 6px;
-        box-shadow: 0px 0px 5px var(--main-shadow-color) inset;
+        background-color: var(--bar-color);
         border-radius: 3px;
     }
 

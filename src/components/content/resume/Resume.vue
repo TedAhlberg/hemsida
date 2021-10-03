@@ -37,7 +37,7 @@
           <Bar class="bar" level="9" />
           <h3>Programming</h3>
           <p class="p-bar">JavaScript</p>
-          <Bar class="bar" level="8" />
+          <Bar class="bar" level="8.5" />
           <p class="p-bar">HTML/CSS</p>
           <Bar class="bar" level="8" />
           <p class="p-bar">Java</p>
@@ -84,6 +84,7 @@
             </span>
           </li>
         </ul>
+        <CircleBar title='Photo shop' level='8.5'/>
       </div>
     </div>
   </div>
@@ -91,6 +92,7 @@
 
 <script>
   import Bar from './Bar.vue'
+  import CircleBar from './CircleBar.vue'
 
   import IconContact from './../../icons/IconContact.vue'
   import IconLanguages from './../../icons/IconLanguages.vue'
@@ -101,6 +103,7 @@
     name: 'Resume',
     components: {
       Bar,
+      CircleBar,
       IconContact,
       IconLanguages,
       IconEducation,
@@ -151,7 +154,7 @@
   }
 
   .section-wrapper {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
   }
 
   .icon-wrapper {
@@ -238,7 +241,7 @@
 
   #section2 {
     margin: 1.75rem 0 0 3rem;
-    width: 20rem;
+    width: 21rem;
     float: left;
     font-family: var(--font3);
   }
@@ -260,7 +263,7 @@
   #section3 {
     margin: 1.75rem 2.5rem 0 0;
     width: auto;
-    height: 20rem;
+    height: auto;
   }
 
   #section3>ul {
