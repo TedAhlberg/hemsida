@@ -8,19 +8,11 @@
     export default {
         name: 'Bar',
         props: ['level'],
-        data: function () {
-            return {
-                width: '0%'
-            }
-        },
         computed: {
             computedWidth: function () {
-                return this.width
+                return (this.level * 10) + '%'
             }
         },
-        created() {
-            this.width = (this.level * 10) + '%'
-        }
     }
 </script>
 

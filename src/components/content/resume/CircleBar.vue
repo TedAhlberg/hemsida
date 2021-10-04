@@ -24,7 +24,7 @@
                 return (this.radius * 2) + 10 + 'px'
             },
             computedFill: function () {
-                return 320 - (320 * (this.level * 10)) / 100
+                return 315 - (315 * (this.level * 10)) / 100
             }
         }
     }
@@ -35,13 +35,18 @@
         position: relative;
     }
 
+    .circle-wrapper>svg {
+        transform: rotate(-90deg);
+    }
+
     .circle-wrapper>svg>circle {
         fill: none;
         stroke-width: 6px;
         stroke: #000;
-        transform: translate(5px, 5px);
-        stroke-dasharray: 320;
-        stroke-dashoffset: 320;
+        transform:  translate(5px, 5px);
+
+        stroke-dasharray: 315;
+        stroke-dashoffset: 315;
     }
 
     .circle-wrapper>svg>.bar {

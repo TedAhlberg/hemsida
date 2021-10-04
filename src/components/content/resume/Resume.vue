@@ -13,78 +13,101 @@
     <div class="flex-wrapper">
 
       <div id="section2">
-        <div class="icon-wrapper">
-          <IconContact class="icon" />
+        <div>
+          <div class="icon-wrapper">
+            <IconContact class="icon" />
+          </div>
+          <div class="section-wrapper">
+            <h2>Contact</h2>
+            <h3>Phone</h3>
+            <p>+46 70-978 77 81</p>
+            <h3>E-mail</h3>
+            <p>Ted.ahlberg95@gmail.com</p>
+            <h3>Address</h3>
+            <p>Dalhemsvägen 69 <br>254 65 Helsingborg</p>
+          </div>
         </div>
-        <div class="section-wrapper">
-          <h2>Contact</h2>
-          <h3>Phone</h3>
-          <p>+46 70-978 77 81</p>
-          <h3>E-mail</h3>
-          <p>Ted.ahlberg95@gmail.com</p>
-          <h3>Address</h3>
-          <p>Dalhemsvägen 69 <br>254 65 Helsingborg</p>
-        </div>
-        <div class="icon-wrapper">
-          <IconLanguages class="icon" />
-        </div>
-        <div class="section-wrapper">
-          <h2 class="h-descender">Languages</h2>
-          <h3>Spoken</h3>
-          <p class="p-bar">Swedish</p>
-          <Bar class="bar" level="10" />
-          <p class="p-bar">English</p>
-          <Bar class="bar" level="9" />
-          <h3>Programming</h3>
-          <p class="p-bar">JavaScript</p>
-          <Bar class="bar" level="8.5" />
-          <p class="p-bar">HTML/CSS</p>
-          <Bar class="bar" level="8" />
-          <p class="p-bar">Java</p>
-          <Bar class="bar" level="6" />
-          <p class="p-bar">C++</p>
-          <Bar class="bar" level="4" />
+
+        <div>
+          <div class="icon-wrapper">
+            <IconLanguages class="icon" />
+          </div>
+          <div class="section-wrapper">
+            <h2>Languages</h2>
+            <h3>Spoken</h3>
+            <p class="p-bar">Swedish</p>
+            <Bar class="bar" level="10" />
+            <p class="p-bar">English</p>
+            <Bar class="bar" level="9" />
+
+            <h3>Programming</h3>
+            <p class="p-bar">JavaScript</p>
+            <Bar class="bar" level="8.5" />
+            <p class="p-bar">HTML/CSS</p>
+            <Bar class="bar" level="8" />
+            <p class="p-bar">Java</p>
+            <Bar class="bar" level="6" />
+            <p class="p-bar">C++</p>
+            <Bar class="bar" level="4" />
+          </div>
         </div>
       </div>
 
       <div id="section3">
-        <div class="icon-wrapper">
-          <IconEducation class="icon" />
+        <div>
+          <div class="icon-wrapper">
+            <IconEducation class="icon" />
+          </div>
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <h3>Bachelor's Degree</h3> 2018 - 2021
+              <span>
+                Malmö University - Major in Computer Science, Specialisation in Computer Application Development
+              </span>
+            </li>
+            <li>
+              <h3>High School</h3> 2011 - 2014
+              <span>
+                NTI Gymnasiet Helsingborg - Technology Program, Information- and Media Technology
+              </span>
+            </li>
+          </ul>
         </div>
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <h3>Bachelor's Degree</h3> 2018 - 2021
-            <span>
-              Malmö University - Major in Computer Science, Specialisation in Computer Application Development
-            </span>
-          </li>
-          <li>
-            <h3>High School</h3> 2011 - 2014
-            <span>
-              NTI Gymnasiet Helsingborg - Technology Program, Information- and Media Technology
-            </span>
-          </li>
-        </ul>
-        <div class="icon-wrapper">
-          <IconWorkHistory class="icon" />
+        <div>
+          <div class="icon-wrapper">
+            <IconWorkHistory class="icon" />
+          </div>
+          <h2>Work History</h2>
+          <ul>
+            <li>
+              <h3>ICA DE Helsingborg</h3> 2016 - Present
+              <span>
+                Warehouse worker - Full time permanent employment
+              </span>
+            </li>
+            <li>
+              <h3>Academic Search</h3> 2015 - 2016
+              <span>
+                Market research - Hourly seasonal employment
+              </span>
+            </li>
+          </ul>
         </div>
-        <h2 class="h-descender">Work History</h2>
-        <ul>
-          <li>
-            <h3>ICA DE Helsingborg</h3> 2016 - Present
-            <span>
-              Warehouse worker - Full time permanent employment
-            </span>
-          </li>
-          <li>
-            <h3>Academic Search</h3> 2015 - 2016
-            <span>
-              Market research - Hourly seasonal employment
-            </span>
-          </li>
-        </ul>
-        <CircleBar title='Photo shop' level='8.5'/>
+        <div>
+          <div class="icon-wrapper">
+            <IconSkills class="icon" />
+          </div>
+          <h2>Skills</h2>
+          <div class="skills-wrapper">
+            <CircleBar class="circle-bar" title='Photo shop' level='8' />
+            <CircleBar class="circle-bar" title='React' level='7' />
+            <CircleBar class="circle-bar" title='NodeJS' level='6.5' />
+            <CircleBar class="circle-bar" title='Vue' level='5.5' />
+            <CircleBar class="circle-bar" title='Linux' level='3.5' />
+            <CircleBar class="circle-bar" title='Firebase' level='3' />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -98,6 +121,7 @@
   import IconLanguages from './../../icons/IconLanguages.vue'
   import IconEducation from './../../icons/IconEducation.vue'
   import IconWorkHistory from './../../icons/IconWorkHistory.vue'
+  import IconSkills from './../../icons/IconSkills.vue'
 
   export default {
     name: 'Resume',
@@ -107,7 +131,8 @@
       IconContact,
       IconLanguages,
       IconEducation,
-      IconWorkHistory
+      IconWorkHistory,
+      IconSkills
     }
   }
 </script>
@@ -125,6 +150,7 @@
   h3 {
     letter-spacing: 0.5px;
     margin: 0.75rem 0 0 0;
+    padding-top: 0.25rem;
   }
 
   ul {
@@ -143,10 +169,6 @@
     margin: 1rem 2.5rem 1rem 2.5rem;
     border-radius: 2px;
     opacity: 90%;
-  }
-
-  .h-descender {
-    padding-top: 0.25rem;
   }
 
   .flex-wrapper {
@@ -184,6 +206,18 @@
     width: 8rem;
     float: right;
     margin: -0.75rem 2rem 0 0;
+    opacity: 90%;
+  }
+
+  .skills-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .circle-bar {
+    margin: 0.5rem;
     opacity: 90%;
   }
 
@@ -240,45 +274,54 @@
   }
 
   #section2 {
-    margin: 1.75rem 0 0 3rem;
+    margin: -3rem 0 0 2.75rem;
     width: 21rem;
     float: left;
     font-family: var(--font3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
-  #section2>.section-wrapper>h3 {
+  #section2>div>.section-wrapper>h3 {
     color: var(--text-color);
     opacity: 60%;
   }
 
-  #section2>.section-wrapper>p {
+  #section2>div>.section-wrapper>p {
     margin: 0.25rem 0 0 0.25rem;
     opacity: 60%;
   }
 
-  #section2>.section-wrapper>.p-bar {
+  #section2>div>.section-wrapper>.p-bar {
     margin: 0.5rem 0 0 0.25rem;
   }
 
   #section3 {
-    margin: 1.75rem 2.5rem 0 0;
+    margin: 2.5rem 2.5rem 0 0.5rem;
     width: auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
-  #section3>ul {
+  #section3>div {
+    margin: 0 0 1rem 0;
+  }
+
+  #section3>div>ul {
     margin: 0 0 0.5rem 0;
     color: var(--text-color);
     opacity: 60%;
   }
 
-  #section3>ul>li>h3 {
+  #section3>div>ul>li>h3 {
     display: inline;
     padding: 0;
     margin-right: 1rem;
   }
 
-  #section3>ul>li>span {
+  #section3>div>ul>li>span {
     display: block;
     margin: 0.25rem 0 0 0.25rem;
     padding: 0 0 0.5rem 0;
