@@ -72,7 +72,7 @@
     }
 
     .circle-title>h3 {
-        margin: 2px 0 0 0;
+        margin: 2px 5px 0 5px;
         font-family: var(--font3);
         color: var(--text-color);
         letter-spacing: 0.5px;

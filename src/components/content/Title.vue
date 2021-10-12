@@ -30,7 +30,7 @@
 
     @media screen and (max-width: 600px) {
         .title {
-            font-size: 7.25vw;
+            font-size: calc(2rem + 4.5vw);
             letter-spacing: 1.75vw;
         }
     }

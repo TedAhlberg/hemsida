@@ -61,13 +61,15 @@
           <h2>Education</h2>
           <ul>
             <li>
-              <h3>Bachelor's Degree</h3> 2018 - 2021
+              <h3>Bachelor's Degree</h3>
+              <p>2018 - 2021</p>
               <span>
                 Malmö University - Major in Computer Science, Specialisation in Computer Application Development
               </span>
             </li>
             <li>
-              <h3>High School</h3> 2011 - 2014
+              <h3>High School</h3>
+              <p>2011 - 2014</p>
               <span>
                 NTI Gymnasiet Helsingborg - Technology Program, Information- and Media Technology
               </span>
@@ -81,13 +83,15 @@
           <h2>Work History</h2>
           <ul>
             <li>
-              <h3>ICA DE Helsingborg</h3> 2016 - Present
+              <h3>ICA DE Helsingborg</h3>
+              <p>2016 - Present</p>
               <span>
                 Warehouse worker - Full time permanent employment
               </span>
             </li>
             <li>
-              <h3>Academic Search</h3> 2015 - 2016
+              <h3>Academic Search</h3>
+              <p>2015 - 2016</p>
               <span>
                 Market research - Hourly seasonal employment
               </span>
@@ -203,14 +207,15 @@
   }
 
   .bar {
-    width: 8rem;
+    width: 45%;
     float: right;
-    margin: -0.75rem 2rem 0 0;
+    margin: -0.75rem 1rem 0 0;
     opacity: 90%;
   }
 
   .skills-wrapper {
     width: 100%;
+    padding-top: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -227,7 +232,7 @@
     background-color: var(--main-bg-color);
     box-shadow: var(--main-box-shadow);
     border-radius: 2rem;
-    width: auto;
+    width: 97.5%;
     max-width: 960px;
     height: auto;
     padding-bottom: 2.5rem;
@@ -274,13 +279,17 @@
   }
 
   #section2 {
-    margin: -3rem 0 0 2.75rem;
+    margin: 2.5rem 0 0 2.75rem;
     width: 21rem;
     float: left;
     font-family: var(--font3);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+  }
+
+  #section2>div>.section-wrapper {
+    margin: 0 0 3rem 0;
   }
 
   #section2>div>.section-wrapper>h3 {
@@ -321,6 +330,12 @@
     margin-right: 1rem;
   }
 
+  #section3>div>ul>li>p {
+    display: inline-block;
+    margin: 0;
+  }
+
+
   #section3>div>ul>li>span {
     display: block;
     margin: 0.25rem 0 0 0.25rem;
@@ -331,5 +346,134 @@
     font-size: 1.4rem;
   }
 
-  /* @media screen and (max-width: 865px) */
+  @media screen and (max-width: 865px) {
+    h2 {
+      font-size: calc(1rem + 1.5vw);
+      margin: calc(0.05rem + 0.3vw) 0 0 0;
+      letter-spacing: 0.125vw;
+    }
+
+    h3 {
+      font-size: calc(0.75rem + 1vw);
+      letter-spacing: 0.1vw;
+    }
+
+    .flex-wrapper {
+      flex-direction: column-reverse;
+    }
+
+    .icon-wrapper {
+      width: 5vw;
+      height: 5vw;
+      min-width: 1.85rem;
+      min-height: 1.85rem;
+    }
+
+    .icon {
+      width: 3.25vw;
+      height: 3.25vw;
+      min-width: 1.1rem;
+      min-height: 1.1rem;
+    }
+
+    .bar {
+    width: 45%;
+    float: right;
+    margin: -0.75rem 0 0 0;
+    opacity: 90%;
+  }
+
+    #resume {
+      overflow: hidden;
+      padding: 0 0 1rem 0;
+    }
+
+    #resume-pic {
+      position: relative;
+      margin: 5vw auto 0 auto;
+      width: 27.5vw;
+      height: 27.5vw;
+      min-width: 7.5rem;
+      min-height: 7.5rem;
+      border: 2vw solid var(--a-color1);
+    }
+
+    #section1 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #section1>h2 {
+      margin: 2.5vw auto 0 auto;
+      padding: 0 5vw 0 5vw;
+      font-size: calc(1.5rem + 2.5vw);
+      text-align: center;
+    }
+
+    #section1>h3 {
+      margin: 1vw 5vw 1vw 5vw;
+      font-size: calc(0.75rem + 1.25vw);
+      text-align: center;
+    }
+
+    #section1>.h-line {
+      width: 40%;
+      min-width: 200px;
+      margin: 1rem auto 0.5rem auto;
+    }
+
+    #section1>p {
+      margin: 1rem 5vw 0rem 5vw;
+      font-size: calc(0.8rem + 0.5vw);
+    }
+
+    #section2 {
+      float: inherit;
+      margin: 0 5vw 0 5vw;
+      flex-direction: column-reverse;
+      width: auto;
+    }
+
+    #section2>div>.section-wrapper {
+      margin: 0 0 5vw 0;
+    }
+
+    #section2>div>.section-wrapper>h3 {
+      font-size: calc(0.9rem + 0.5vw);
+    }
+
+    #section2>div>.section-wrapper>p {
+      font-size: calc(0.8rem + 0.5vw);
+    }
+
+    #section2>div>.section-wrapper>p-bar {
+      margin: 0;
+    }
+    /*
+
+
+  #section2>div>.section-wrapper>.p-bar {
+    margin: 0.5rem 0 0 0.25rem;
+  } */
+
+    #section3 {
+      margin: 4vw 5vw 0 5vw;
+    }
+
+    #section3>div {
+      margin: 0 0 2.5vw 0;
+    }
+
+    #section3>div>ul>li>p {
+      font-size: calc(0.8rem + 0.5vw);
+    }
+
+    #section3>div>ul>li>span {
+      font-size: calc(0.8rem + 0.5vw);
+    }
+
+    ::marker {
+      font-size: calc(1rem + 0.5vw);
+    }
+  }
 </style>
