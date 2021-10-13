@@ -1,18 +1,19 @@
 <template>
   <div class="card-wrapper">
-    <div class="card-background">
+    <div class="card-background" :style="{ backgroundImage: this.imgPath }">
     </div>
     <div class="card-gradient">
       <div class="card-content">
-        <span class="card-title">PROJECT
+        <span class="card-title">{{ this.title }}
           <div class="card-title-line"></div>
         </span>
         <span class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque
-          turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus
-          nec.
+          {{ this.text }}
         </span>
-        <button class="card-button"><span>MORE INFO</span></button>
+        <div>
+          <button v-if="this.button2" class="card-button" v-on:click="goToLink2()"><span>CHECK OUT</span></button>
+          <button v-if="this.button1" class="card-button" v-on:click="goToLink1()"><span>MORE INFO</span></button>
+        </div>
       </div>
     </div>
   </div>
@@ -22,13 +23,37 @@
 <script>
   export default {
     name: 'Card',
+    props: ['title', 'text', 'img', 'buttons', 'link1', 'link2'],
+    data() {
+      return {
+        imgPath: "",
+        button1: true,
+        button2: true,
+      }
+    },
+    created() {
+      //img
+      this.imgPath = 'url(' + require('./../../../assets/img/' + this.img) + ')'
+
+      //buttons
+      if (this.buttons == 0) this.button1 = false
+      if (this.buttons == 1) this.button2 = false
+    },
+    methods: {
+      goToLink1() {
+        window.open(this.link1, '_blank')
+      },
+      goToLink2() {
+        window.open(this.link2, '_blank')
+      }
+    }
   }
 </script>
 
 <style lang="css" scoped>
   .card-wrapper {
     position: relative;
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
     height: fit-content;
     width: 20rem;
     padding: 7.5rem 1rem 1rem 1rem;
@@ -54,7 +79,6 @@
     filter: blur(1px);
     border-radius: 2rem;
 
-    background-image: url('./../../../assets/img/card-placeholder.jpg');
     background-size: contain;
   }
 
@@ -73,7 +97,7 @@
 
   .card-content {
     height: 90%;
-    padding: 1.2rem;
+    padding: 1.2rem 1.2rem 0.5rem 1.2rem;
     opacity: 65%;
 
     display: flex;
@@ -116,6 +140,7 @@
 
   .card-button {
     font-family: var(--font2);
+    margin: 0 0.25rem 0.75rem 0.25rem;
     padding: 0.75rem;
     border: 0;
     color: rgba(247, 241, 232);
@@ -141,13 +166,13 @@
     transform: scale(1.025);
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 865px) {
     .card-title {
-      font-size: 1.5rem;
+      font-size: calc(1rem + 1.5vw);
     }
 
     .card-text {
-      font-size: 0.975rem;
+      font-size: calc(0.8rem + 0.5vw);
     }
 
     .card-button {
@@ -155,17 +180,7 @@
     }
 
     .card-button>span {
-      font-size: 0.7rem;
-    }
-  }
-
-  @media screen and (max-width: 735px) {
-    .card-wrapper {
-      box-shadow: var(--main-r-box-shadow);
-    }
-
-    .card-button {
-      box-shadow: var(--main-r-box-shadow);
+      font-size: calc(0.6rem + 0.4vw);
     }
   }
 </style>

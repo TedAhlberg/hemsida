@@ -1,6 +1,6 @@
 <template>
     <div class="title">
-        {{contentTitle}}
+        {{ contentTitle }}
     </div>
 </template>
 
@@ -13,7 +13,7 @@
 
 <style>
     .title {
-        margin: 3rem auto 3rem auto;
+        margin: 3rem auto 1.5rem auto;
         padding-left: 0.2em;
         width: fit-content;
         position: relative;

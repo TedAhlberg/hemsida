@@ -449,12 +449,6 @@
     #section2>div>.section-wrapper>p-bar {
       margin: 0;
     }
-    /*
-
-
-  #section2>div>.section-wrapper>.p-bar {
-    margin: 0.5rem 0 0 0.25rem;
-  } */
 
     #section3 {
       margin: 4vw 5vw 0 5vw;

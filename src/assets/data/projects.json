@@ -1,0 +1,17 @@
+{
+    "projects": [{
+        "title": "PROJECT 1",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "img": "card-placeholder.jpg",
+        "buttons": 1,
+        "link1": "http://",
+        "link2": ""
+    }, {
+        "title": "PROJECT 2",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "img": "card-placeholder2.png",
+        "buttons": 2,
+        "link1": "http://",
+        "link2": "http://"
+    }]
+}

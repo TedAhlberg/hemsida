@@ -6,14 +6,14 @@
 
 <script>
     export default {
-        name: 'Bar',
-        props: ['level'],
+        name: "Bar",
+        props: ["level"],
         computed: {
             computedWidth: function () {
-                return (this.level * 10) + '%'
-            }
+                return this.level * 10 + "%";
+            },
         },
-    }
+    };
 </script>
 
 <style>
