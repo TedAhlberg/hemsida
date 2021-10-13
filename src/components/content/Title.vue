@@ -28,10 +28,10 @@
         user-select: none;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 865px) {
         .title {
-            font-size: calc(2rem + 4.5vw);
-            letter-spacing: 1.75vw;
+            font-size: calc(1.5rem + 4vw);
+            letter-spacing: 1.25vw;
         }
     }
 </style>

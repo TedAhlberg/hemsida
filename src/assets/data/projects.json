@@ -5,7 +5,7 @@
         "img": "card-placeholder.jpg",
         "buttons": 1,
         "link1": "http://",
-        "link2": ""
+        "link2": "http://"
     }, {
         "title": "PROJECT 2",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
