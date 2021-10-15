@@ -42,12 +42,10 @@ body {
 
 .bg-color1 {
     background-color: var(--bg-color1);
+    transition: background-color 0.5s;
 }
 
 .bg-color2 {
     background-color: var(--bg-color2);
-}
-
-.bg-color3 {
-    background-color: var(--bg-color3);
-}
+    transition: background-color 0.5s;
+}   
