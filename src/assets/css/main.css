@@ -23,16 +23,15 @@
 
     --bg-color1: rgb(177, 226, 232);
     --bg-color2: rgb(195, 242, 202);
-    --bg-color3: rgb(247, 206, 139);
 
     --bar-color: rgb(224, 219, 213);
 
     --main-bg-gradient: linear-gradient(60deg,
             var(--bg-color1) 0%,
             var(--bg-color2) 25%,
-            var(--bg-color3) 50%,
-            var(--bg-color1) 75%,
-            var(--bg-color2) 100%);
+            var(--bg-color1) 50%,
+            var(--bg-color2) 75%,
+            var(--bg-color1) 100%);
 }
 
 body {
