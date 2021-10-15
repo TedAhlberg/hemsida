@@ -279,7 +279,7 @@
   }
 
   #section2 {
-    margin: 2.5rem 0 0 2.75rem;
+    margin: 2.5rem 0.5rem 0 2.75rem;
     width: 21rem;
     float: left;
     font-family: var(--font3);

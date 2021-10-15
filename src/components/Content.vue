@@ -4,7 +4,6 @@
         <div class="content">
             <Resume v-if="resume" />
             <Projects v-if="projects" />
-            <Contact v-if="contact" />
         </div>
     </div>
 </template>
@@ -13,7 +12,6 @@
     import Title from './content/Title.vue'
     import Resume from './content/resume/Resume.vue'
     import Projects from './content/projects/Projects.vue'
-    import Contact from './content/Contact.vue'
 
     export default {
         name: 'Content',
@@ -21,14 +19,12 @@
             Title,
             Resume,
             Projects,
-            Contact
         },
         props: ['contentTitle', 'color'],
         data: () => {
             return ({
                 resume: false,
-                projects: false,
-                contact: false,                
+                projects: false,                
             })
         },
         computed: {
@@ -41,7 +37,6 @@
         created() {
             if (this.contentTitle == "RESUME") this.resume = true
             if (this.contentTitle == "PROJECTS") this.projects = true
-            if (this.contentTitle == "CONTACT") this.contact = true
         }
     }
 </script>

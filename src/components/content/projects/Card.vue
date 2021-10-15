@@ -10,7 +10,7 @@
         <span class="card-text">
           {{ this.text }}
         </span>
-        <div>
+        <div class="card-button-wrapper">
           <button v-if="this.button2" class="card-button" v-on:click="goToLink2()"><span>CHECK OUT</span></button>
           <button v-if="this.button1" class="card-button" v-on:click="goToLink1()"><span>MORE INFO</span></button>
         </div>
@@ -138,6 +138,10 @@
     margin-bottom: 1.1rem;
   }
 
+  .card-button-wrapper{
+    display: flex;
+  }
+
   .card-button {
     font-family: var(--font2);
     margin: 0 0.25rem 0.75rem 0.25rem;
@@ -176,7 +180,7 @@
     }
 
     .card-button {
-      padding: 0.6rem 0.75rem 0.75rem 0.75rem;
+      padding: calc(0.45rem + 0.5vw) calc(0.4rem + 0.6vw) calc(0.4rem + 0.6vw) calc(0.4rem + 0.6vw);
     }
 
     .card-button>span {
