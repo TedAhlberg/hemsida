@@ -22,7 +22,7 @@
       Footer
     },
     created() {
-      colors.setAccentColors()
+      colors.setColors()
     }
   }
 </script>

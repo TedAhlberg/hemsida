@@ -7,11 +7,13 @@
     </div>
     <div id="footer-line"></div>
     <span>Icons made by <a href="https://freeicons.io/icon-list/business-and-online-icons" target="_blank">Raj Dev</a></span>
-    <span>© Ted Alhberg 2021</span>
+    <span>© <span @click="this.colors">Ted</span> Alhberg 2021</span>
   </div>
 </template>
 
 <script>
+  import colors from './../util/colors.js'
+
   import IconMail from './icons/IconMail.vue'
   import IconGitHub from './icons/IconGitHub.vue'
   import IconLinked from './icons/IconLinked.vue'
@@ -22,8 +24,12 @@
       IconMail,
       IconGitHub,
       IconLinked
+    },
+    methods: {
+      colors() {
+        colors.setColors()
+      }
     }
-
   }
 </script>
 
@@ -67,6 +73,7 @@
     font-family: var(--font3);
     color: var(--text-color);
     opacity: 70%;
+    user-select: none;
   }
 
   #footer>span:first-of-type {
@@ -75,6 +82,10 @@
 
   #footer>span:last-of-type {
     margin: 0.1rem 0 2.5rem 0;
+  }
+
+  #footer>span:last-of-type>span {
+    cursor: pointer;
   }
 
   #footer>span>a {
