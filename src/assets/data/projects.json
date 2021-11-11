@@ -1,17 +1,38 @@
 {
     "projects": [{
-        "title": "PROJECT 1",
+        "title": "Resume Web Site",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
-        "img": "card-placeholder.jpg",
+        "img": "resume.png",
         "buttons": 1,
-        "link1": "http://",
+        "link1": "https://github.com/TedAhlberg/hemsida",
         "link2": "http://"
     }, {
-        "title": "PROJECT 2",
+        "title": "Thesis Web App",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "img": "thesis.png",
+        "buttons": 2,
+        "link1": "https://github.com/TedAhlberg/typografi",
+        "link2": "http://"
+    }, {
+        "title": "Auranest Dashboard",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "img": "aura.png",
+        "buttons": 1,
+        "link1": "https://auranest.com/sv/2020/01/16/nytt-samarbete-med-universitetsstudenter/",
+        "link2": "http://"
+    }, {
+        "title": "Small Trivia App",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "img": "trivia.png",
+        "buttons": 2,
+        "link1": "https://github.com/TedAhlberg/trivia-app",
+        "link2": "http://"
+    },{
+        "title": "CSS & Typography",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
         "img": "card-placeholder2.png",
         "buttons": 2,
-        "link1": "http://",
+        "link1": "https://github.com/TedAhlberg/sf/tree/master/Ted",
         "link2": "http://"
     }]
 }

@@ -6,7 +6,8 @@
       <IconLinked class="icon" />
     </div>
     <div id="footer-line"></div>
-    <span>Icons made by <a href="https://freeicons.io/icon-list/business-and-online-icons" target="_blank">Raj Dev</a></span>
+    <span>Icons made by <a href="https://freeicons.io/icon-list/business-and-online-icons" target="_blank">Raj
+        Dev</a></span>
     <span>© <span @click="this.colors">Ted</span> Alhberg 2021</span>
   </div>
 </template>

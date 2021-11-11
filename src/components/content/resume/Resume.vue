@@ -64,7 +64,8 @@
               <h3>Bachelor's Degree</h3>
               <p>2018 - 2021</p>
               <span>
-                Malmö University - Major in Computer Science, Specialisation in Computer Application Development
+                Malmö University - Major in Computer Science, Specialisation in Computer Application Development <br />
+                Thesis: <a href="http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1567351&dswid=-9236" target="_blank">Typography and readability for mobile devices</a>
               </span>
             </li>
             <li>
@@ -342,6 +343,10 @@
     padding: 0 0 0.5rem 0;
   }
 
+  #section3>div>ul>li>span>a {
+    color: var(--text-color)
+  }
+
   ::marker {
     font-size: 1.4rem;
   }
@@ -377,11 +382,11 @@
     }
 
     .bar {
-    width: 45%;
-    float: right;
-    margin: -0.75rem 0 0 0;
-    opacity: 90%;
-  }
+      width: 45%;
+      float: right;
+      margin: -0.75rem 0 0 0;
+      opacity: 90%;
+    }
 
     #resume {
       overflow: hidden;

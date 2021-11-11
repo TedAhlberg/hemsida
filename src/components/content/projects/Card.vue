@@ -32,10 +32,8 @@
       }
     },
     created() {
-      //img
       this.imgPath = 'url(' + require('./../../../assets/img/' + this.img) + ')'
 
-      //buttons
       if (this.buttons == 0) this.button1 = false
       if (this.buttons == 1) this.button2 = false
     },
@@ -79,7 +77,9 @@
     filter: blur(1px);
     border-radius: 2rem;
 
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .card-gradient {
@@ -127,7 +127,7 @@
   }
 
   .card-wrapper:hover .card-title-line {
-    transform: scaleX(1);
+    transform: scaleX(0.9);
   }
 
   .card-text {
