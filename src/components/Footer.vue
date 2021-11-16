@@ -36,6 +36,7 @@
 
 <style>
   #footer {
+    margin: 3rem;
     height: 5rem;
     background-color: var(--main-bg-color);
   }
@@ -50,7 +51,7 @@
     width: 5rem;
     height: 5rem;
     color: var(--text-color);
-    opacity: 70%;
+    opacity: 0.7;
     cursor: pointer;
     transition: transform 0.125s ease-out;
   }
@@ -63,7 +64,7 @@
     height: 4px;
     width: 260px;
     margin: 0 auto 0 auto;
-    opacity: 60%;
+    opacity: 0.6;
     background-color: var(--text-color);
     border-radius: 2px;
   }
@@ -73,7 +74,7 @@
     text-align: center;
     font-family: var(--font3);
     color: var(--text-color);
-    opacity: 70%;
+    opacity: 0.7;
     user-select: none;
   }
 
@@ -96,7 +97,7 @@
   }
 
   #footer>span>a:hover {
-    opacity: 50%;
+    opacity: 0.5;
   }
 
 

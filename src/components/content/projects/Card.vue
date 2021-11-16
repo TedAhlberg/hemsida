@@ -73,8 +73,8 @@
     right: 0;
     bottom: 0;
     z-index: 0;
-    opacity: 75%;
-    filter: blur(1px);
+    opacity: 0.75;
+    filter: blur(2.5px);
     border-radius: 2rem;
 
     background-size: cover;
@@ -98,7 +98,7 @@
   .card-content {
     height: 90%;
     padding: 1.2rem 1.2rem 0.5rem 1.2rem;
-    opacity: 65%;
+    opacity: 0.65;
 
     display: flex;
     flex-flow: column;
@@ -107,7 +107,7 @@
   }
 
   .card-title {
-    padding-bottom: 0;
+    padding: 0 0.25rem 0 0.25rem;
     font-size: 1.75em;
     letter-spacing: 0.2rem;
     text-align: center;
@@ -118,7 +118,7 @@
   .card-title-line {
     height: 4px;
     background-color: var(--a-color2);
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.75rem;
     transform: scaleX(0);
     transition: 0.5s ease-in-out;
@@ -131,7 +131,7 @@
   }
 
   .card-text {
-    font-family: Arial;
+    font-family: var(--font3);
     font-weight: 500;
     font-size: 1.1rem;
     color: var(--main-title-color);
@@ -157,7 +157,7 @@
 
   .card-button>span {
     font-size: 0.9rem;
-    opacity: 90%;
+    opacity: 0.9;
     letter-spacing: 0.1rem;
   }
 

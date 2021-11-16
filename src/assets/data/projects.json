@@ -1,35 +1,35 @@
 {
     "projects": [{
         "title": "Resume Web Site",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "text": "This project is actually the webpage you’re on right now! The purpose of the site is to function both as a resume and a portfolio for job applications. The site is built using the framework Vue.",
         "img": "resume.png",
         "buttons": 1,
         "link1": "https://github.com/TedAhlberg/hemsida",
         "link2": "http://"
     }, {
         "title": "Thesis Web App",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "text": "With the help of this application I gathered data to be able to accomplish my thesis paper. The application presents texts with different fonts and font sizes to the participants. Some examples of the measured values are: the participants’ personal preferences, scroll length and touch interactions. The front end is built upon React and the back end uses Firebase and NodeJS.",
         "img": "thesis.png",
         "buttons": 2,
         "link1": "https://github.com/TedAhlberg/typografi",
         "link2": "http://"
     }, {
         "title": "Auranest Dashboard",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "text": "As a part of my studies at Malmö University there was a degree project which was performed in cooperation with real companies in the industry. The degree project I was part of built an in house dashboard for the company Auranest. The dashboard was completely modular with different diagrams for visualising all kinds of data.",
         "img": "aura.png",
         "buttons": 1,
         "link1": "https://auranest.com/sv/2020/01/16/nytt-samarbete-med-universitetsstudenter/",
         "link2": "http://"
     }, {
         "title": "Small Trivia App",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "text": "This is a small trivia quiz which is built upon Vue and gets the trivia questions from an API.",
         "img": "trivia.png",
         "buttons": 2,
         "link1": "https://github.com/TedAhlberg/trivia-app",
         "link2": "http://"
     },{
         "title": "CSS & Typography",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non enim aliquam, aliquet urna ac, pellentesque turpis. Integer congue lorem quis ex cursus elementum. Proin porttitor leo arcu, vitae mollis eros dapibus nec.",
+        "text": "This project was used as an independent study which focused on how you can use CSS and typography on the web. Examples of topics included in the study are CSS-properties, animations, what fonts work well with others and finding the perfect size for paragraphs. This resulted in three smaller websites to practice what was learned during the studies.",
         "img": "card-placeholder2.png",
         "buttons": 2,
         "link1": "https://github.com/TedAhlberg/sf/tree/master/Ted",

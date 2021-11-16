@@ -20,7 +20,7 @@
 
         font-family: var(--font2);
         color: var(--text-color);
-        opacity: 65%;
+        opacity: 0.65;
         text-align: center;
 
         font-size: 3.75rem;

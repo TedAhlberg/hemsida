@@ -149,7 +149,7 @@
     margin: 0.25rem 0 0 0;
     font-family: var(--font2);
     color: var(--a-color1);
-    opacity: 90%;
+    opacity: 0.9;
   }
 
   h3 {
@@ -173,7 +173,7 @@
     width: auto;
     margin: 1rem 2.5rem 1rem 2.5rem;
     border-radius: 2px;
-    opacity: 90%;
+    opacity: 0.9;
   }
 
   .flex-wrapper {
@@ -195,7 +195,7 @@
     justify-content: space-around;
     flex-direction: column;
     float: left;
-    opacity: 90%;
+    opacity: 0.9;
   }
 
   .icon {
@@ -211,7 +211,7 @@
     width: 45%;
     float: right;
     margin: -0.75rem 1rem 0 0;
-    opacity: 90%;
+    opacity: 0.9;
   }
 
   .skills-wrapper {
@@ -223,13 +223,13 @@
   }
 
   .circle-bar {
-    margin: 0.5rem;
-    opacity: 90%;
+    margin: 1rem;
+    opacity: 0.9;
   }
 
   #resume {
     position: relative;
-    margin: 3rem auto 0 auto;
+    margin: 3rem auto 2rem auto;
     background-color: var(--main-bg-color);
     box-shadow: var(--main-box-shadow);
     border-radius: 2rem;
@@ -248,7 +248,7 @@
     background-size: contain;
     border-radius: 50%;
     border: 1rem solid var(--a-color1);
-    opacity: 90%;
+    opacity: 0.9;
   }
 
   #section1>h2 {
@@ -264,7 +264,7 @@
     letter-spacing: 1px;
     color: var(--sub-text-color);
     font-weight: 300;
-    opacity: 50%;
+    opacity: 0.5;
     margin: 0.5rem 0 1.5rem 21rem;
   }
 
@@ -276,7 +276,7 @@
     font-family: var(--font3);
     font-size: 1.1rem;
     margin: 1rem 2.5rem 0rem 21.5rem;
-    opacity: 70%;
+    opacity: 0.7;
   }
 
   #section2 {
@@ -295,12 +295,12 @@
 
   #section2>div>.section-wrapper>h3 {
     color: var(--text-color);
-    opacity: 60%;
+    opacity: 0.6;
   }
 
   #section2>div>.section-wrapper>p {
     margin: 0.25rem 0 0 0.25rem;
-    opacity: 60%;
+    opacity: 0.6;
   }
 
   #section2>div>.section-wrapper>.p-bar {
@@ -322,7 +322,7 @@
   #section3>div>ul {
     margin: 0 0 0.5rem 0;
     color: var(--text-color);
-    opacity: 60%;
+    opacity: 0.6;
   }
 
   #section3>div>ul>li>h3 {
@@ -385,7 +385,7 @@
       width: 45%;
       float: right;
       margin: -0.75rem 0 0 0;
-      opacity: 90%;
+      opacity: 0.9;
     }
 
     #resume {

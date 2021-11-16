@@ -77,7 +77,7 @@
         color: var(--text-color);
         letter-spacing: 0.5px;
         text-align: center;
-        opacity: 60%;
+        opacity: 0.6;
         padding: 0 5px 0 5px;
     }
 </style>

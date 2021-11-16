@@ -55,6 +55,7 @@
         height: 75vw;
         max-height: 550px;
         position: relative;
+        z-index: 0;
     }
 
     #header-background {
@@ -62,13 +63,14 @@
         width: 85%;
         height: 85%;
         border-radius: 50%;
-        opacity: 75%;
+        opacity: 0.7;
 
         margin: 0;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 1;
     }
 
     #header-box {
@@ -96,6 +98,7 @@
         padding-right: 2%;
         margin-left: auto;
         margin-right: auto;
+        z-index: 2;
     }
 
     #header-subtitle {
