@@ -9,18 +9,18 @@
                     </div>
                 </div>
             </div>
-            <Arrow />
         </div>
+        <IconArrow id="icon-arrow" />
     </div>
 </template>
 
 <script>
-    import Arrow from './header/Arrow.vue'
+    import IconArrow from './../icons/iconArrow.vue'
 
     export default {
         name: 'Header',
         components: {
-            Arrow
+            IconArrow
         }
     }
 </script>
@@ -37,7 +37,7 @@
         min-height: 650px;
 
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: column;
     }
 
@@ -45,10 +45,9 @@
         border-radius: 50%;
         box-shadow: var(--header-box-shadow);
 
-        margin-top: 5.5%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 55px;
+        margin: 2.5rem auto 0 auto;
+
+        /* margin-bottom: 55px; */
 
         width: 75vw;
         max-width: 550px;
@@ -85,7 +84,6 @@
         transform: translate(-50%, -50%);
     }
 
-
     #header-title {
         font-size: 11.5em;
         letter-spacing: -5.5px;
@@ -115,6 +113,28 @@
         margin-right: auto;
     }
 
+    #icon-arrow {
+        position: relative;
+        top: 0;
+
+        padding: 3rem;
+        margin: 5rem auto 0 auto;
+        width: 5rem;
+        height: 5rem;
+        opacity: 0.6;
+        cursor: pointer;
+        animation: updown 2s ease infinite;
+        transition: transform 0.25s ease-out;
+    }
+
+    #icon-arrow:hover {
+        transform: scale(1.1);
+    }
+
+    #icon-arrow:active {
+        transform: scale(0.9);
+    }
+
     @media screen and (max-width: 735px) {
         #header-title {
             font-size: 25vw;
@@ -126,6 +146,17 @@
             font-size: 5.5vw;
             letter-spacing: 1.6vw;
             margin-top: -7vw;
+        }
+
+        #icon-arrow {
+            width: calc(2rem + 5vw);
+            height: calc(2rem + 5vw);
+        }
+    }
+
+    @keyframes updown {
+        50% {
+            top: -7.5px
         }
     }
 </style>

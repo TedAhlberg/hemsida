@@ -26,10 +26,6 @@ const setAccentColors = () => {
   let rgbArray1 = rgbStringToArray(getCSSVariable('--bg-color1'))
   let rgbArray2 = rgbStringToArray(getCSSVariable('--bg-color2'))
 
-  console.log(rgbArray1)
-  console.log(rgbArray2)
-
-
   for (let i = 0; i < 3; i++) {
     rgbArray1[i] = rgbArray1[i] - rgbConstSub[i]
     rgbArray2[i] = rgbArray2[i] - rgbConstSub[i]

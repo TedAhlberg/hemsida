@@ -53,11 +53,15 @@
     color: var(--text-color);
     opacity: 0.7;
     cursor: pointer;
-    transition: transform 0.125s ease-out;
+    transition: transform 0.2s ease-out;
   }
 
   #footer-icons-wrapper>.icon:hover {
     transform: scale(1.05);
+  }
+
+  #footer-icons-wrapper>.icon:active {
+    transform: scale(0.95);
   }
 
   #footer-line {
@@ -83,7 +87,7 @@
   }
 
   #footer>span:last-of-type {
-    margin: 0.1rem 0 2.5rem 0;
+    padding: 0.1rem 0 2.5rem 0;
   }
 
   #footer>span:last-of-type>span {

@@ -14,18 +14,18 @@
         "link1": "https://github.com/TedAhlberg/typografi",
         "link2": "http://"
     }, {
-        "title": "Auranest Dashboard",
-        "text": "As a part of my studies at Malmö University there was a degree project which was performed in cooperation with real companies in the industry. The degree project I was part of built an in house dashboard for the company Auranest. The dashboard was completely modular with different diagrams for visualising all kinds of data.",
-        "img": "aura.png",
-        "buttons": 1,
-        "link1": "https://auranest.com/sv/2020/01/16/nytt-samarbete-med-universitetsstudenter/",
-        "link2": "http://"
-    }, {
         "title": "Small Trivia App",
         "text": "This is a small trivia quiz which is built upon Vue and gets the trivia questions from an API.",
         "img": "trivia.png",
         "buttons": 2,
         "link1": "https://github.com/TedAhlberg/trivia-app",
+        "link2": "http://"
+    }, {
+        "title": "Auranest Dashboard",
+        "text": "As a part of my studies at Malmö University there was a degree project which was performed in cooperation with real companies in the industry. The degree project I was part of built an in house dashboard for the company Auranest. The dashboard was completely modular with different diagrams for visualising all kinds of data.",
+        "img": "aura.png",
+        "buttons": 1,
+        "link1": "https://auranest.com/sv/2020/01/16/nytt-samarbete-med-universitetsstudenter/",
         "link2": "http://"
     },{
         "title": "CSS & Typography",

@@ -167,7 +167,7 @@
   }
 
   .card-button:active {
-    transform: scale(1.025);
+    transform: scale(0.95);
   }
 
   @media screen and (max-width: 865px) {
