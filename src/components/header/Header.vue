@@ -47,8 +47,6 @@
 
         margin: 2.5rem auto 0 auto;
 
-        /* margin-bottom: 55px; */
-
         width: 75vw;
         max-width: 550px;
         height: 75vw;

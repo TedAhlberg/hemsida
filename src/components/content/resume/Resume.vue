@@ -5,10 +5,7 @@
       <h2>Ted Ahlberg</h2>
       <h3>Software Developer</h3>
       <div class="h-line"></div>
-      <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit ante sed venenatis
-        facilisis. Nulla ullamcorper tellus diam, consectetur consectetur elit suscipit vel. Sed efficitur nunc
-        fringilla, pulvinar ligula a, aliquet ante. Duis ipsum sem, convallis id eleifend vitae, bibendum at sapien.
-        Phasellus malesuada libero sit amet nibh tempus sodales vitae at tortor</p>
+      <p class="about">I am a 26 year old aspiring software developer and recent recipient of a bachelor’s degree in application development. I’ve had an interest for web development and programming since my early teens, an interest that has kept on growing during the years. Some of my other interests include video games, movies and cooking. My ambition now is to start working within the software industry to gain new experiences, learn more and develop in the process.</p>
     </div>
     <div class="flex-wrapper">
 
@@ -98,6 +95,7 @@
               </span>
             </li>
           </ul>
+          <span>References are given upon request</span>
         </div>
         <div>
           <div class="icon-wrapper">
@@ -274,9 +272,11 @@
 
   #section1>p {
     font-family: var(--font3);
-    font-size: 1.1rem;
+    font-size: 1.055rem;
     margin: 1rem 2.5rem 0rem 21.5rem;
     opacity: 0.7;
+    line-height: 1.3;
+    letter-spacing: 0.4px;
   }
 
   #section2 {
@@ -319,6 +319,14 @@
     margin: 0 0 1rem 0;
   }
 
+  #section3>div>span {
+    display: block;
+    margin: 0 0 0 1.7rem;
+    font-family: var(--font3);
+    color: var(--text-color);
+    opacity: 0.6;
+  }
+
   #section3>div>ul {
     margin: 0 0 0.5rem 0;
     color: var(--text-color);
@@ -344,7 +352,12 @@
   }
 
   #section3>div>ul>li>span>a {
-    color: var(--text-color)
+    color: var(--text-color);
+    transition: opacity 0.15s ease-out;
+  }
+
+  #section3>div>ul>li>span>a:hover {
+    opacity: 0.5;
   }
 
   ::marker {
@@ -461,6 +474,10 @@
 
     #section3>div {
       margin: 0 0 2.5vw 0;
+    }
+
+    #section3>div>span {
+      font-size: calc(0.8rem + 0.5vw);
     }
 
     #section3>div>ul>li>p {

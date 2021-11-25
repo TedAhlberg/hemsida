@@ -12,14 +12,14 @@
         "img": "thesis.png",
         "buttons": 2,
         "link1": "https://github.com/TedAhlberg/typografi",
-        "link2": "http://"
+        "link2": "http://www.tedahlberg.se/thesis"
     }, {
         "title": "Small Trivia App",
         "text": "This is a small trivia quiz which is built upon Vue and gets the trivia questions from an API.",
         "img": "trivia.png",
         "buttons": 2,
         "link1": "https://github.com/TedAhlberg/trivia-app",
-        "link2": "http://"
+        "link2": "http://www.tedahlberg.se/trivia-app"
     }, {
         "title": "Auranest Dashboard",
         "text": "As a part of my studies at Malmö University there was a degree project which was performed in cooperation with real companies in the industry. The degree project I was part of built an in house dashboard for the company Auranest. The dashboard was completely modular with different diagrams for visualising all kinds of data.",
@@ -30,9 +30,9 @@
     },{
         "title": "CSS & Typography",
         "text": "This project was used as an independent study which focused on how you can use CSS and typography on the web. Examples of topics included in the study are CSS-properties, animations, what fonts work well with others and finding the perfect size for paragraphs. This resulted in three smaller websites to practice what was learned during the studies.",
-        "img": "card-placeholder2.png",
+        "img": "csstypo.png",
         "buttons": 2,
         "link1": "https://github.com/TedAhlberg/sf/tree/master/Ted",
-        "link2": "http://"
+        "link2": "http://www.tedahlberg.se/css&typo"
     }]
 }

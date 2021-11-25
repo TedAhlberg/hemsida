@@ -21,8 +21,10 @@
       Content,
       Footer
     },
-    created() {
-      colors.setColors()
+    mounted() {
+      this.$nextTick(function () {
+        colors.setColors()
+      })
     }
   }
 </script>
