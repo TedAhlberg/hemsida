@@ -44,6 +44,8 @@
             <Bar class="bar" level="8" />
             <p class="p-bar">Java</p>
             <Bar class="bar" level="6" />
+            <p class="p-bar">C#</p>
+            <Bar class="bar" level="5" />
             <p class="p-bar">C++</p>
             <Bar class="bar" level="4" />
           </div>
@@ -81,8 +83,15 @@
           <h2>Work History</h2>
           <ul>
             <li>
+              <h3>Netcompany</h3>
+              <p>2022 - Present</p>
+              <span>
+                Developer - Full time permanent employment
+              </span>
+            </li>
+            <li>
               <h3>ICA DE Helsingborg</h3>
-              <p>2016 - Present</p>
+              <p>2016 - 2022</p>
               <span>
                 Warehouse worker - Full time permanent employment
               </span>
@@ -103,11 +112,12 @@
           </div>
           <h2>Skills</h2>
           <div class="skills-wrapper">
-            <CircleBar class="circle-bar" title='Photo shop' level='8' />
+            <CircleBar class="circle-bar" title='Photo-shop' level='8' />
             <CircleBar class="circle-bar" title='React' level='7' />
             <CircleBar class="circle-bar" title='NodeJS' level='6.5' />
             <CircleBar class="circle-bar" title='Vue' level='5.5' />
             <CircleBar class="circle-bar" title='Linux' level='3.5' />
+            <CircleBar class="circle-bar" title='.NET' level='3.25' />
             <CircleBar class="circle-bar" title='Firebase' level='3' />
           </div>
         </div>
@@ -280,8 +290,8 @@
   }
 
   #section2 {
-    margin: 2.5rem 0.5rem 0 2.75rem;
-    width: 21rem;
+    margin: 2.5rem 1.5rem 0 2.75rem;
+    width: 23rem;
     float: left;
     font-family: var(--font3);
     display: flex;

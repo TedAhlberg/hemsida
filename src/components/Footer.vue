@@ -8,7 +8,7 @@
     <div id="footer-line"></div>
     <span>Icons made by <a href="https://freeicons.io/icon-list/business-and-online-icons" target="_blank">Raj
         Dev</a></span>
-    <span>© <span @click="this.colors">Ted</span> Alhberg 2021</span>
+    <span>© <span @click="this.colors">Ted</span> Alhberg {{this.year}}</span>
   </div>
 </template>
 
@@ -30,6 +30,14 @@
       colors() {
         colors.setColors()
       }
+    },
+    data: function () {
+      return {
+        year: ""
+      }
+    },
+    created() {
+      this.year = new Date().getFullYear()
     }
   }
 </script>

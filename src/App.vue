@@ -22,9 +22,10 @@
       Footer
     },
     mounted() {
-      this.$nextTick(function () {
-        colors.setColors()
-      })
+      document.onreadystatechange = () => {
+        if (document.readyState == "complete")
+          colors.setColors()
+      }
     }
   }
 </script>
