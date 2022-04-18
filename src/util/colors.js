@@ -1,4 +1,4 @@
-const bgColors = require('./../assets/data/bgColors.json').colors
+var bgColors = require('./../assets/data/bgColors.json').colors
 
 const setColors = () => {
   setBgColors()
@@ -11,7 +11,7 @@ const setBgColors = () => {
   let rand2 = Math.floor(Math.random() * max)
 
   if (rand1 == rand2) rand2++
-  if (rand2 > max) rand2 = 0
+  if (rand2 > max - 1) rand2 = 0
 
   let color1 = rgbArrayToString(bgColors[rand1])
   let color2 = rgbArrayToString(bgColors[rand2])
@@ -61,4 +61,4 @@ const setCSSVariable = (string, value) => {
   document.documentElement.style.setProperty(string, value)
 }
 
-exports.setColors = setColors
+module.exports = { setColors }

@@ -22,7 +22,7 @@
       Footer
     },
     mounted() {
-      document.onreadystatechange = () => {
+      document.onreadystatechange = function () {
         if (document.readyState == "complete")
           colors.setColors()
       }
