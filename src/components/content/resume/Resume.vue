@@ -5,7 +5,7 @@
       <h2>Ted Ahlberg</h2>
       <h3>Software Developer</h3>
       <div class="h-line"></div>
-      <p class="about">I am a 26 year old aspiring software developer and recent recipient of a bachelor’s degree in application development. I’ve had an interest for web development and programming since my early teens, an interest that has kept on growing during the years. Some of my other interests include video games, movies and cooking. My ambition now is to start working within the software industry to gain new experiences, learn more and develop in the process.</p>
+      <p class="about">I am a 26 year old software developer right at the beginning of my career. Today I work as a junior full-stack developer on a project where I get the chance to both maintain and develop new features for a larger CRM system. No two days are the same and the tasks are varied, something that gives me the chance to learn a lot and develop every day. I’ve had an interest for web development and programming since my early teens, an interest that has kept on growing during the years. Some of my other interests include video games, movies and cooking.</p>
     </div>
     <div class="flex-wrapper">
 
